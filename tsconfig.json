@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "target": "ES6",
+    "removeComments": true,
+    "sourceMap": true
+  }
+}

@@ -1,0 +1,40 @@
+<main>
+	<form id="data" action="/add" method="POST" style="max-width: 480px;">
+		<div>
+			<legend>Title</legend>
+			<input name="title" type="text" value="{{post.title}}">
+		</div>
+		<hr>
+		<div>
+			<legend>Description</legend>
+			<input name="description" type="text" value="{{post.description}}">
+		</div>
+		<hr>
+		<div>
+			<legend>Price</legend>
+			<input name="price" type="text" value="{{post.price}}">
+		</div>
+		<hr>
+		<div>
+			<legend>Count</legend>
+			<input name="count" type="text" value="{{post.count}}">
+		</div>
+		<hr>
+		<button>Создать</button>
+	</form>
+
+	<hr>
+
+	<section>
+		<h2>Products</h2>
+{{#each products}}
+		<hr/>
+		<div>{{title}}</div>
+		<div>{{description}}</div>
+		<div>{{price}}</div>
+		<div>{{count}}</div>
+{{else}}
+	<div>No products</div>
+{{/each}}
+	</section>
+</main>
