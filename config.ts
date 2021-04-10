@@ -1,6 +1,6 @@
 let pre = 'EPAM_';
 
-module.exports = {
+export let Config = {
 	project: {
 		port: process.env[pre + 'PORT'] || 3000,
 		name: 'EPAM Practice'
@@ -10,7 +10,7 @@ module.exports = {
 		host: process.env[pre + 'DATABASE_HOST'] || 'localhost',
 		user: process.env[pre + 'DATABASE_USER'] || 'root',
 		password: process.env[pre + 'DATABASE_PASSWORD'] || '',
-		name: process.env[pre + 'DATABASE_NAME'] || '',
-		port: 3306
+		name: process.env[pre + 'DATABASE_NAME'] || 'epam_practice',
+		port: 27017 || 3306
 	}
-};
+}
